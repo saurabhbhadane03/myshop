@@ -23,6 +23,7 @@
 .grid-item img {
     width: 15rem;
     height: 20rem;
+    object-fit: contain;
 }
 
 .grid-item h4,h5 {
