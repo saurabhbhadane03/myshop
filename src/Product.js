@@ -42,8 +42,8 @@ export default function Products(){
 
     function searchWithText(){
 
-        const filter = data ? data.filter( item => {
-            return (item.title).includes(searchText)
+        const filter = (data && searchText) ? data.filter( item => {
+            return (item.title).toLowerCase().includes(searchText.toLowerCase())
         }): ""
 
         setFilterArray(filter)
