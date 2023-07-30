@@ -31,6 +31,10 @@
   margin: 0.5rem;
 }
 
+.grid-item-price{
+  color: red;
+  font-size: 1.0rem;
+}
 .grid-item-heading{
   margin-bottom: 1.5rem;
 }
@@ -40,4 +44,84 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 1.5rem;
+}
+
+.banner{
+  width:'100vw'; 
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.banner-menu{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1.2rem
+}
+
+
+.banner .heading h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+
+.banner-slogan h1{
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.banner-menu .search-bar{
+  display: flex;
+  height: 2.5rem;
+}
+
+.banner-menu img{
+  width: 2.4rem
+}
+
+.banner-menu .search-bar input{
+  width: 40rem
+  
+}
+
+.banner-menu select{
+  width : 10rem;
+}
+
+.buyNow-button{
+  margin: 0 auto;
+}
+
+.buyNow-button button {
+  cursor: pointer;
+  width: 7.5rem;
+  height: 2.8rem;
+  background: black;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.grid-item-button{
+  cursor: pointer;
+  width: 7.5rem;
+  height: 2.0rem;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.grid-item-button:hover{
+  background-color: white;
+  border: 2px solid black;
+  color: black;
 }

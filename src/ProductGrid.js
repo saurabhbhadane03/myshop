@@ -5,7 +5,6 @@ import './App.css';
 
 export default function ProductGrid({data}){
 
-    console.log( "inside grid" , data ? data[0].title : "")
 
     return (
         <>
@@ -17,9 +16,10 @@ export default function ProductGrid({data}){
                             <div className="grid-item">
                                <div className="grid-item-heading"> 
                                   <h4>{item.title}</h4>
-                                  <h5>Price ${item.price}</h5>
+                                  <h5 className="grid-item-price">Price ${item.price}</h5>
                                 </div>
                                 <img src= {item.image} alt="product-img"/>
+                                <button className="grid-item-button">Add to Cart</button>
                             </div> 
                         )
                     })
